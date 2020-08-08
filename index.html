@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Javascript Example · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+
+  <style>
+    .goster {
+      display: visible;
+    }
+
+    .gizle {
+      display: none;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h2>İlk Javascript Ödevi</h2>
+      <p class="lead">Javascrip her geçen gün biraz daha güçlenmektedir. Böyle bir nimetten bir web developerın
+        faydalanmaması düşünülemez. Şimdi yapacağımız bu oyunda kullanıcı 1-100 arası 1 sayı girer ve doğru rakamı tahmin edemezse 
+      en son tahmininden daha küçük veya daha büyük denilerek doğru tahmine yaklaştırlır. 15 tahminde bilmez ise oyun biter. Game Over.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6 mb-3">
+        <input type="number" class="form-control" id="sayiGir" placeholder="1-100 arası bir sayı giriniz" value="">
+        <div class="invalid-feedback">
+          Sadece sayı giriniz.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <input type="submit" class="form-control btn-outline-success" id="sayiGirBtn" value="Gönder">
+        <div class="invalid-feedback">
+          Sadece sayı giriniz.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <label class="cikanSayilar"></label>
+      </div>
+      <div class="container">
+        <label class="text-danger buyuk gizle">Daha büyük bir sayı giriniz.</label>
+        <label class="text-danger kucuk gizle">Daha küçük bir sayı giriniz.</label>
+      </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017-2020 Erol Aktepe</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Gizlilik Politikası</a></li>
+        <li class="list-inline-item"><a href="#">Çerezler</a></li>
+        <li class="list-inline-item"><a href="#">Destek</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="assets/dist/js/bootstrap.bundle.js"></script>
+  <script src="form-validation.js"></script>
+  <script src="site.js"></script>
+</body>
+
+</html>
